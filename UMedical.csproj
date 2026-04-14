@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Administrator\Downloads\UMedical.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B3F93A76-239D-4226-8E91-B594C049493D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>UMedical</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>UMedical</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\Desktop\Data\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\Desktop\Data\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Desktop\Data\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Rocket.API">
+      <HintPath>..\..\..\Desktop\Data\Rocket.API.dll</HintPath>
+    </Reference>
+    <Reference Include="Rocket.Core">
+      <HintPath>..\..\..\Desktop\Data\Rocket.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Rocket.Unturned">
+      <HintPath>..\..\..\Desktop\Data\Rocket.Unturned.dll</HintPath>
+    </Reference>
+    <Reference Include="SDG.NetTransport">
+      <HintPath>..\..\..\Desktop\Data\SDG.NetTransport.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\Desktop\Data\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\Desktop\Data\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\Desktop\Data\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>..\..\..\Desktop\Data\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Models\Configuration\Sub_Configuration\ScreamConfiguration.cs" />
+    <Compile Include="Models\KeyListener.cs" />
+    <Compile Include="Utils\HookinViewerUtil.cs" />
+    <Compile Include="Utils\LoggerUtil.cs" />
+    <Compile Include="Utils\UIUtil.cs" />
+    <Compile Include="Patches\PClothesPants.cs" />
+    <Compile Include="Patches\PClothesPantsW.cs" />
+    <Compile Include="Patches\PClothesShirt.cs" />
+    <Compile Include="Patches\PClothesShirtW.cs" />
+    <Compile Include="Patches\PClothesVest.cs" />
+    <Compile Include="Patches\PClothesVestW.cs" />
+    <Compile Include="Patches\PClothesGlasses.cs" />
+    <Compile Include="Patches\PClothesGlassesW.cs" />
+    <Compile Include="Patches\PClothesMask.cs" />
+    <Compile Include="Patches\PClothesMaskW.cs" />
+    <Compile Include="Patches\PClothesHat.cs" />
+    <Compile Include="Patches\PClothesHatW.cs" />
+    <Compile Include="Patches\PClothesBackpack.cs" />
+    <Compile Include="Patches\PClothesBackpackW.cs" />
+    <Compile Include="Patches\PClothesSwapGlasses.cs" />
+    <Compile Include="Patches\PClothesSwapMask.cs" />
+    <Compile Include="Patches\PClothesSwapHat.cs" />
+    <Compile Include="Patches\PClothesSwapPants.cs" />
+    <Compile Include="Patches\PClothesSwapShirt.cs" />
+    <Compile Include="Patches\PClothesSwapVest.cs" />
+    <Compile Include="Patches\PClothesSwapBackpack.cs" />
+    <Compile Include="Patches\PDamage.cs" />
+    <Compile Include="Patches\POnServerDisconnected.cs" />
+    <Compile Include="Models\CuffConfiguration.cs" />
+    <Compile Include="Models\Configuration\DownedConfiguration.cs" />
+    <Compile Include="Models\DownedPlayer.cs" />
+    <Compile Include="Models\Samu\Values\RequestInfo.cs" />
+    <Compile Include="Models\Samu\Revive\AfterEffects.cs" />
+    <Compile Include="Models\Medical\Values\KillInfo.cs" />
+    <Compile Include="Models\Medical\Values\Revive.cs" />
+    <Compile Include="Models\Medical\Values\SVector3.cs" />
+    <Compile Include="Models\Hooking\HookingSession.cs" />
+    <Compile Include="Models\Hooking\Values\MovementInfo.cs" />
+    <Compile Include="Models\Configuration\EffectsConfiguration.cs" />
+    <Compile Include="Models\Configuration\ExitConfiguration.cs" />
+    <Compile Include="Models\Configuration\HookingConfiguration.cs" />
+    <Compile Include="Models\Configuration\MiscConfiguration.cs" />
+    <Compile Include="Models\Configuration\ReviveConfiguration.cs" />
+    <Compile Include="Models\Configuration\UIConfiguration.cs" />
+    <Compile Include="Models\Configuration\Traduction.cs" />
+    <Compile Include="Models\Configuration\Sub_Configuration\AfterEffectsConfiguration.cs" />
+    <Compile Include="Models\Configuration\Sub_Configuration\CommunicationConfiguration.cs" />
+    <Compile Include="Models\Configuration\Sub_Configuration\ItemConfiguration.cs" />
+    <Compile Include="Models\Configuration\Sub_Configuration\LifeTime.cs" />
+    <Compile Include="Models\Configuration\Sub_Configuration\MovementConfiguration.cs" />
+    <Compile Include="Models\Configuration\Sub_Configuration\MultiplierConfiguration.cs" />
+    <Compile Include="Models\Configuration\Sub_Configuration\VehicleConfiguration.cs" />
+    <Compile Include="Events\AfterEffectsEvents.cs" />
+    <Compile Include="Events\DownedEvents.cs" />
+    <Compile Include="Events\HookingEvents.cs" />
+    <Compile Include="Commands\AnalyzeCommand.cs" />
+    <Compile Include="Commands\EndCommand.cs" />
+    <Compile Include="Commands\ReviveCommand.cs" />
+    <Compile Include="Commands\SamuCommand.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
